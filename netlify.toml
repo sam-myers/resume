@@ -1,7 +1,8 @@
 [build]
   command = "yarn build"
   publish = "dist"
-
+  [environment]
+    NODE_VERSION = "16"
 
 [dev]
   command = "astro dev"
