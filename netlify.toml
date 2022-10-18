@@ -1,9 +1,10 @@
 [build]
   command = "yarn build"
   publish = "dist"
-  [environment]
-    NODE_VERSION = "16"
 
 [dev]
   command = "astro dev"
   target-port = 3000
+
+[context.production.environment]
+  NODE_VERSION = "16"
